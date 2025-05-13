@@ -1,0 +1,7 @@
+<label>{{ label() }}</label>
+<input
+  #input
+  [type]="type()"
+  [value]="value()"
+  [placeholder]="placeholder()"
+  (input)="value.set(input.value)" />

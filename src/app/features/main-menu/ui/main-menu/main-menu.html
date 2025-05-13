@@ -1,0 +1,18 @@
+<nav>
+  <ul cdkMenu>
+    @for (item of items(); track item.label) {
+      <li>
+        @if (item.action; as action) {
+          <button class="trm-menu-item" (click)="action()" cdkMenuItem>
+            {{ item.label }}
+          </button>
+        }
+        @if (item.path; as path) {
+          <a class="trm-menu-item" [routerLink]="path" cdkMenuItem>
+            {{ item.label }}
+          </a>
+        }
+      </li>
+    }
+  </ul>
+</nav>

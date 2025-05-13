@@ -1,0 +1,24 @@
+.trm-menu-item
+  @apply block px-2 py-1 w-full text-start outline-none
+
+  &:hover, &:focus-visible
+    @apply text-stone-900 bg-stone-100
+
+.trm-input-field
+  @apply w-full border-b-4
+
+  label
+    @apply text-sm
+
+  input
+    @apply w-full outline-none placeholder:text-stone-500 focus:placeholder:text-transparent
+
+.trm-button
+  @apply px-4 py-2 outline-none
+
+  &:hover, &:focus-visible
+    &:not(:disabled)
+      @apply text-stone-900 bg-stone-100
+
+  &:disabled
+    @apply text-stone-500

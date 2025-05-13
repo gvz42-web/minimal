@@ -37,6 +37,13 @@
           }
         }
       }
+    },
+    {
+      "label": "Start Angular App",
+      "type": "shell",
+      "command": "npx ng serve",
+      "problemMatcher": [],
+      "detail": "Run Angular project"
     }
   ]
 }
