@@ -1,17 +1,15 @@
 <ul cdkMenu>
-  <li>
-    <button class="trm-menu-item" (click)="openThemeChooser()" cdkMenuItem>
-      {{ 'settings.theme' | translate }}
-    </button>
-  </li>
-  <li>
-    <button class="trm-menu-item" (click)="openLanguageChooser()" cdkMenuItem>
-      {{ 'settings.language' | translate }}
-    </button>
-  </li>
-  <li>
-    <button class="trm-menu-item" back-button cdkMenuItem>
-      {{ 'common.back' | translate }}
-    </button>
-  </li>
+  @for (item of items; track item.label) {
+    <li>
+      <button
+        class="trm-menu-item"
+        (click)="item.action()"
+        (selected)="currentItem.set(item.label)"
+        (deselected)="currentItem.set(null)"
+        trmItemSelected
+        cdkMenuItem>
+        {{ item.label + '.label' | translate }}
+      </button>
+    </li>
+  }
 </ul>

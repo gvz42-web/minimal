@@ -16,10 +16,6 @@
     "he": "Hebraisk",
     "no": "Norsk"
   },
-  "settings": {
-    "language": "Språk",
-    "theme": "Tema"
-  },
   "mainMenu": {
     "login": {
       "description": "Få tilgang til kontoen din for å se personlig innhold og administrere dine preferanser.",
@@ -51,5 +47,19 @@
     "green": "Grønn",
     "light": "Lys",
     "purple": "Lilla"
+  },
+  "settings": {
+    "back": {
+      "description": "Gå tilbake til forrige meny eller lukk innstillingspanelet.",
+      "label": "Tilbake"
+    },
+    "language": {
+      "description": "Velg ditt foretrukne språk for applikasjonsgrensesnittet.",
+      "label": "Språk"
+    },
+    "theme": {
+      "description": "Velg et visuelt tema for å tilpasse appens utseende og følelse.",
+      "label": "Tema"
+    }
   }
 }

@@ -4,52 +4,62 @@
     "cn": "中文",
     "ru": "俄语",
     "ja": "日语",
-    "he": "Hebrew",
-    "no": "Norwegian"
+    "he": "希伯来语",
+    "no": "挪威语"
   },
   "appName": "极简",
-  "settings": {
-    "language": "语言",
-    "theme": "Theme"
-  },
   "common": {
     "areYouSure": "你确定吗？",
     "back": "返回",
     "cancel": "取消",
     "ok": "确定",
     "save": "保存",
-    "loading": "Loading"
+    "loading": "加载中"
   },
   "mainMenu": {
     "login": {
-      "description": "Access your account to view personalized content and manage your preferences.",
-      "label": "Login"
+      "description": "访问您的账户以查看个性化内容并管理偏好设置。",
+      "label": "登录"
     },
     "logout": {
-      "description": "Sign out of your account securely and return to the home screen.",
-      "label": "Logout"
+      "description": "安全地退出账户并返回主界面。",
+      "label": "退出登录"
     },
     "profile": {
-      "description": "View and edit your personal information, avatar, and account settings.",
-      "label": "Profile"
+      "description": "查看并编辑您的个人信息、头像和账户设置。",
+      "label": "个人资料"
     },
     "settings": {
-      "description": "Customize your experience by adjusting language, notifications, and other preferences.",
-      "label": "Settings"
+      "description": "通过调整语言、通知等选项来自定义您的体验。",
+      "label": "设置"
     }
   },
-  "defaultDescription": "Welcome to Minimal – a clean and simple interface to help you stay focused. Select a menu option to get started.",
+  "defaultDescription": "欢迎使用极简——一个简洁清爽的界面，助你保持专注。请选择一个菜单项开始使用。",
   "auth": {
-    "email": "Email",
-    "enterEmail": "Enter email",
-    "enterPassword": "Enter password",
-    "login": "Login",
-    "password": "Password"
+    "email": "电子邮箱",
+    "enterEmail": "请输入电子邮箱",
+    "enterPassword": "请输入密码",
+    "login": "登录",
+    "password": "密码"
   },
   "themes": {
-    "dark": "Dark",
-    "green": "Green",
-    "light": "Light",
-    "purple": "Purple"
+    "dark": "深色",
+    "green": "绿色",
+    "light": "浅色",
+    "purple": "紫色"
+  },
+  "settings": {
+    "back": {
+      "description": "返回上一级菜单或关闭设置面板。",
+      "label": "返回"
+    },
+    "language": {
+      "description": "选择您偏好的界面语言。",
+      "label": "语言"
+    },
+    "theme": {
+      "description": "选择视觉主题来自定义应用外观。",
+      "label": "主题"
+    }
   }
 }

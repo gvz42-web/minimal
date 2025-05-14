@@ -36,3 +36,7 @@ export class ThemeService {
     this.theme.set(theme);
   }
 }
+
+export const setupTheme = () => {
+  const themeService = inject(ThemeService);
+};

@@ -27,8 +27,18 @@
     }
   },
   "settings": {
-    "language": "Language",
-    "theme": "Theme"
+    "language": {
+      "label": "Language",
+      "description": "Select your preferred language for the application interface."
+    },
+    "theme": {
+      "label": "Theme",
+      "description": "Choose a visual theme to customize the look and feel of the app."
+    },
+    "back": {
+      "label": "Back",
+      "description": "Return to the previous menu or close the settings panel."
+    }
   },
   "common": {
     "back": "Back",

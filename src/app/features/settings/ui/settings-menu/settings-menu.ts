@@ -1,24 +1,62 @@
 import { CdkMenu, CdkMenuItem } from '@angular/cdk/menu';
-import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
+import { Location } from '@angular/common';
+import {
+  ChangeDetectionStrategy,
+  Component,
+  computed,
+  inject,
+  signal,
+} from '@angular/core';
 import { rxMethod } from '@ngrx/signals/rxjs-interop';
 import { TranslatePipe } from '@ngx-translate/core';
+import { useDescription } from 'app/shared/core/description/description';
 import { languages } from 'app/shared/core/i18n/languages';
 import { Translate } from 'app/shared/core/i18n/translate';
 import { ThemeService } from 'app/shared/core/theme/theme-service';
 import { themes } from 'app/shared/core/theme/themes';
-import { BackButton } from 'app/shared/ui/back-button/back-button';
+import { ItemSelected } from 'app/shared/ui/item-selected/item-selected';
 import { useOpenSelectionDialog } from 'app/shared/ui/selection-dialog/use-open-selection-dialog';
 import { pipe, switchMap, tap } from 'rxjs';
 
 @Component({
   selector: 'trm-settings-menu',
-  imports: [BackButton, TranslatePipe, CdkMenu, CdkMenuItem],
+  imports: [TranslatePipe, CdkMenu, CdkMenuItem, ItemSelected],
   templateUrl: './settings-menu.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class SettingsMenu {
   private translate = inject(Translate);
   private themeService = inject(ThemeService);
+  private location = inject(Location);
+
+  protected currentItem = signal<string | null>(null);
+
+  protected items = [
+    {
+      label: 'settings.language',
+      action: () => this.openLanguageChooser(),
+    },
+    {
+      label: 'settings.theme',
+      action: () => this.openThemeChooser(),
+    },
+    {
+      label: 'settings.back',
+      action: () => this.location.back(),
+    },
+  ];
+
+  constructor() {
+    useDescription(
+      computed(() => {
+        const key = this.currentItem();
+        if (key) {
+          return key + '.description';
+        }
+        return 'mainMenu.settings.description';
+      })
+    );
+  }
 
   private openSelectionDialog = useOpenSelectionDialog();
 
@@ -31,7 +69,7 @@ export class SettingsMenu {
             value,
             label: 'languages.' + value,
           })),
-          title: 'settings.language',
+          title: 'settings.language.label',
         }).pipe(
           tap(lang => {
             if (lang) {
@@ -52,7 +90,7 @@ export class SettingsMenu {
             value,
             label: 'themes.' + value,
           })),
-          title: 'settings.theme',
+          title: 'settings.theme.label',
         }).pipe(
           tap(theme => {
             if (theme) {

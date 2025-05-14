@@ -1,6 +1,7 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { setupTranslation } from './shared/core/i18n/translate';
+import { setupTheme } from './shared/core/theme/theme-service';
 
 @Component({
   selector: 'trm-root',
@@ -11,5 +12,6 @@ import { setupTranslation } from './shared/core/i18n/translate';
 export class App {
   constructor() {
     setupTranslation();
+    setupTheme();
   }
 }
