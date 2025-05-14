@@ -19,7 +19,7 @@ import { useOpenSelectionDialog } from 'app/shared/ui/selection-dialog/use-open-
 import { pipe, switchMap, tap } from 'rxjs';
 
 @Component({
-  selector: 'trm-settings-menu',
+  selector: 'min-settings-menu',
   imports: [TranslatePipe, CdkMenu, CdkMenuItem, ItemSelected],
   templateUrl: './settings-menu.html',
   changeDetection: ChangeDetectionStrategy.OnPush,

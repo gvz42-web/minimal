@@ -12,7 +12,7 @@ import { ItemSelected } from 'app/shared/ui/item-selected/item-selected';
 import { MenuItem, useMenuItems } from './menu-items';
 
 @Component({
-  selector: 'trm-main-menu',
+  selector: 'min-main-menu',
   imports: [CdkMenu, RouterLink, CdkMenuItem, TranslatePipe, ItemSelected],
   templateUrl: './main-menu.html',
   changeDetection: ChangeDetectionStrategy.OnPush,

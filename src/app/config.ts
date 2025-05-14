@@ -22,8 +22,8 @@ export const config: ApplicationConfig = {
       useValue: {
         exitAnimationDuration: 0,
         enterAnimationDuration: 0,
-        backdropClass: 'trm-dialog-backdrop',
-        panelClass: 'trm-dialog',
+        backdropClass: 'min-dialog-backdrop',
+        panelClass: 'min-dialog',
         autoFocus: true,
       } as MatDialogConfig,
     },

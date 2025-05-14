@@ -10,7 +10,7 @@ import { ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';
 import { TranslatePipe } from '@ngx-translate/core';
 
 @Component({
-  selector: 'trm-input-field',
+  selector: 'min-input-field',
   templateUrl: './input-field.html',
   imports: [TranslatePipe],
   providers: [
@@ -21,7 +21,7 @@ import { TranslatePipe } from '@ngx-translate/core';
     },
   ],
   host: {
-    class: 'trm-input-field block',
+    class: 'min-input-field block',
   },
   changeDetection: ChangeDetectionStrategy.OnPush,
 })

@@ -4,12 +4,11 @@ import {
   computed,
   inject,
 } from '@angular/core';
-import { AuthStore } from '../../../features/auth/core/auth-store';
 import { TranslatePipe } from '@ngx-translate/core';
-import { Translate } from 'app/shared/core/i18n/translate';
+import { AuthStore } from '../../../features/auth/core/auth-store';
 
 @Component({
-  selector: 'trm-header',
+  selector: 'min-header',
   imports: [TranslatePipe],
   host: {
     class: 'block px-8 py-2 border-b-4 flex justify-between items-center',

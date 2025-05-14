@@ -10,7 +10,7 @@ import { TranslatePipe } from '@ngx-translate/core';
 import { SelectionDialogData } from './types';
 
 @Component({
-  selector: 'trm-selection-dialog',
+  selector: 'min-selection-dialog',
   imports: [CdkListbox, CdkOption, TranslatePipe],
   templateUrl: './selection-dialog.html',
   changeDetection: ChangeDetectionStrategy.OnPush,

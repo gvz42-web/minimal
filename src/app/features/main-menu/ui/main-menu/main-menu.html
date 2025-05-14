@@ -4,22 +4,22 @@
       <li>
         @if (item.action; as action) {
           <button
-            class="trm-menu-item"
+            class="min-menu-item"
             (click)="action()"
             (selected)="currentItem.set(item)"
             (deselected)="currentItem.set(null)"
-            trmItemSelected
+            minItemSelected
             cdkMenuItem>
             {{ item.label + '.label' | translate }}
           </button>
         }
         @if (item.path; as path) {
           <a
-            class="trm-menu-item"
+            class="min-menu-item"
             [routerLink]="path"
             (selected)="currentItem.set(item)"
             (deselected)="currentItem.set(null)"
-            trmItemSelected
+            minItemSelected
             cdkMenuItem>
             {{ item.label + '.label' | translate }}
           </a>

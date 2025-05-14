@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "terminal-app": {
+    "minimal": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -15,12 +15,12 @@
       },
       "root": "",
       "sourceRoot": "src",
-      "prefix": "trm",
+      "prefix": "min",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/terminal-app",
+            "outputPath": "dist/minimal",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "tsConfig": "tsconfig.app.json",
@@ -65,10 +65,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "terminal-app:build:production"
+              "buildTarget": "minimal:build:production"
             },
             "development": {
-              "buildTarget": "terminal-app:build:development"
+              "buildTarget": "minimal:build:development"
             }
           },
           "defaultConfiguration": "development"

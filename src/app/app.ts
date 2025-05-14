@@ -4,7 +4,7 @@ import { setupTranslation } from './shared/core/i18n/translate';
 import { setupTheme } from './shared/core/theme/theme-service';
 
 @Component({
-  selector: 'trm-root',
+  selector: 'min-root',
   imports: [RouterOutlet],
   templateUrl: './app.html',
   changeDetection: ChangeDetectionStrategy.OnPush,

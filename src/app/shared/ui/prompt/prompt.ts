@@ -4,7 +4,7 @@ import { TranslatePipe } from '@ngx-translate/core';
 import { PromptData } from './types';
 
 @Component({
-  selector: 'trm-prompt',
+  selector: 'min-prompt',
   imports: [TranslatePipe],
   templateUrl: './prompt.html',
   host: {

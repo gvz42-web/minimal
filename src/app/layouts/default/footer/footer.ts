@@ -3,7 +3,7 @@ import { TranslatePipe } from '@ngx-translate/core';
 import { Description } from 'app/shared/core/description/description';
 
 @Component({
-  selector: 'trm-footer',
+  selector: 'min-footer',
   templateUrl: './footer.html',
   imports: [TranslatePipe],
   host: {

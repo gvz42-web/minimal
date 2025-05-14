@@ -2,11 +2,11 @@
   @for (item of items; track item.label) {
     <li>
       <button
-        class="trm-menu-item"
+        class="min-menu-item"
         (click)="item.action()"
         (selected)="currentItem.set(item.label)"
         (deselected)="currentItem.set(null)"
-        trmItemSelected
+        minItemSelected
         cdkMenuItem>
         {{ item.label + '.label' | translate }}
       </button>

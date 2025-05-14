@@ -1,7 +1,7 @@
 import { Directive, output } from '@angular/core';
 
 @Directive({
-  selector: '[trmItemSelected]',
+  selector: '[minItemSelected]',
   host: {
     '(mouseenter)': 'selected.emit($event)',
     '(mouseleave)': 'deselected.emit($event)',

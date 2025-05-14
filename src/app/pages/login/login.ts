@@ -5,21 +5,21 @@ import {
   inject,
   signal,
 } from '@angular/core';
-import { AuthStore } from '../../features/auth/core/auth-store';
+import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 import {
   FormControl,
   FormGroup,
   ReactiveFormsModule,
   Validators,
 } from '@angular/forms';
-import { InputField } from '../../shared/ui/input-field/input-field';
-import { BackButton } from '../../shared/ui/back-button/back-button';
-import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 import { Router } from '@angular/router';
 import { TranslatePipe } from '@ngx-translate/core';
+import { AuthStore } from '../../features/auth/core/auth-store';
+import { BackButton } from '../../shared/ui/back-button/back-button';
+import { InputField } from '../../shared/ui/input-field/input-field';
 
 @Component({
-  selector: 'trm-login',
+  selector: 'min-login',
   templateUrl: './login.html',
   imports: [InputField, ReactiveFormsModule, BackButton, TranslatePipe],
   changeDetection: ChangeDetectionStrategy.OnPush,
