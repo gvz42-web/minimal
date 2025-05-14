@@ -28,7 +28,7 @@
       "label": "Logging"
     },
     "profile": {
-      "description": "Se og rediger din personlige informasjon, avatar og kontoinnstillinger.",
+      "description": "Se og rediger din personlige informasjon, avatar og kontoinnstillinger. (Det er ikke implementert ennå)",
       "label": "Profil"
     },
     "settings": {

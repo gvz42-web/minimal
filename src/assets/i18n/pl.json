@@ -36,7 +36,7 @@
       "label": "Logout"
     },
     "profile": {
-      "description": "Wyświetl i edytuj swoje dane osobowe, awatar i ustawienia konta.",
+      "description": "Wyświetl i edytuj swoje dane osobowe, awatar i ustawienia konta. (To jeszcze nie zostało wdrożone)",
       "label": "Profil"
     },
     "settings": {

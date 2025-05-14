@@ -21,7 +21,7 @@
     },
     "profile": {
       "label": "Profile",
-      "description": "View and edit your personal information, avatar, and account settings."
+      "description": "View and edit your personal information, avatar, and account settings. (it's not implemented yet)"
     },
     "settings": {
       "label": "Settings",

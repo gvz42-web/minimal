@@ -36,7 +36,7 @@
       "label": "Cierre de sesión"
     },
     "profile": {
-      "description": "Ver y editar su información personal, avatar y configuración de cuenta.",
+      "description": "Ver y editar su información personal, avatar y configuración de cuenta. (aún no se ha implementado)",
       "label": "Perfil"
     },
     "settings": {
