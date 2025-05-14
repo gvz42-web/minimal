@@ -6,9 +6,10 @@ import {
   MAT_DIALOG_DEFAULT_OPTIONS,
   MatDialogConfig,
 } from '@angular/material/dialog';
-import { provideRouter } from '@angular/router';
+import { provideRouter, TitleStrategy } from '@angular/router';
 import { provideTranslateService } from '@ngx-translate/core';
 import { routes } from './routes';
+import { MinTitleStrategy } from './shared/core/title/title-strategy';
 
 export const config: ApplicationConfig = {
   providers: [
@@ -26,6 +27,10 @@ export const config: ApplicationConfig = {
         panelClass: 'min-dialog',
         autoFocus: true,
       } as MatDialogConfig,
+    },
+    {
+      provide: TitleStrategy,
+      useClass: MinTitleStrategy,
     },
   ],
 };
