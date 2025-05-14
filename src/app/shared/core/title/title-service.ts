@@ -21,7 +21,6 @@ export class TitleService {
   }
 
   setTitle(title?: string) {
-    console.log('setTitle', title);
     this.currentTitle.set(title || defaultTitle);
   }
 }
