@@ -1,5 +1,12 @@
 import { DOCUMENT } from '@angular/common';
-import { computed, effect, inject, Injectable, signal } from '@angular/core';
+import {
+  computed,
+  effect,
+  inject,
+  Injectable,
+  RendererFactory2,
+  signal,
+} from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 import { LocalStorage } from '../browser-apis/local-storage';
 import {
@@ -15,6 +22,7 @@ export class Translate {
   private translateService = inject(TranslateService);
   private localStorage = inject(LocalStorage);
   private document = inject(DOCUMENT);
+  private renderer = inject(RendererFactory2).createRenderer(null, null);
 
   private fromLocalStorage = this.localStorage.get('lang') || defaultLanguage;
 
@@ -36,14 +44,18 @@ export class Translate {
       const currentLanguage = this.currentLanguage();
       this.translateService.use(currentLanguage);
       this.localStorage.set('lang', currentLanguage);
+      this.renderer.setAttribute(
+        this.document.documentElement,
+        'lang',
+        currentLanguage
+      );
     });
 
     effect(() => {
-      console.log(this.isRtl());
       if (this.isRtl()) {
-        this.document.dir = 'rtl';
+        this.renderer.setAttribute(this.document.documentElement, 'dir', 'rtl');
       } else {
-        this.document.dir = 'ltr';
+        this.renderer.setAttribute(this.document.documentElement, 'dir', 'ltr');
       }
     });
   }
