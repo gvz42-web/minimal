@@ -12,10 +12,16 @@ export const routes: Routes = [
       },
       {
         path: 'login',
+        data: {
+          title: 'mainMenu.login.label',
+        },
         loadComponent: () => import('./pages/login/login').then(m => m.Login),
       },
       {
         path: 'settings',
+        data: {
+          title: 'mainMenu.settings.label',
+        },
         loadComponent: () =>
           import('./pages/settings/settings').then(m => m.Settings),
       },

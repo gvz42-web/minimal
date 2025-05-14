@@ -1,5 +1,4 @@
 import { CdkMenu, CdkMenuItem } from '@angular/cdk/menu';
-import { Location } from '@angular/common';
 import {
   ChangeDetectionStrategy,
   Component,
@@ -7,6 +6,7 @@ import {
   inject,
   signal,
 } from '@angular/core';
+import { Router } from '@angular/router';
 import { rxMethod } from '@ngrx/signals/rxjs-interop';
 import { TranslatePipe } from '@ngx-translate/core';
 import { useDescription } from 'app/shared/core/description/description';
@@ -27,7 +27,7 @@ import { pipe, switchMap, tap } from 'rxjs';
 export class SettingsMenu {
   private translate = inject(Translate);
   private themeService = inject(ThemeService);
-  private location = inject(Location);
+  private router = inject(Router);
 
   protected currentItem = signal<string | null>(null);
 
@@ -42,7 +42,7 @@ export class SettingsMenu {
     },
     {
       label: 'settings.back',
-      action: () => this.location.back(),
+      action: () => this.router.navigate(['..']),
     },
   ];
 
