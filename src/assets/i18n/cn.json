@@ -1,0 +1,48 @@
+{
+  "languages": {
+    "en": "英语",
+    "cn": "中文",
+    "ru": "俄语",
+    "ja": "日语",
+    "he": "Hebrew",
+    "no": "Norwegian"
+  },
+  "appName": "极简",
+  "settings": {
+    "language": "语言"
+  },
+  "common": {
+    "areYouSure": "你确定吗？",
+    "back": "返回",
+    "cancel": "取消",
+    "ok": "确定",
+    "save": "保存",
+    "loading": "Loading"
+  },
+  "mainMenu": {
+    "login": {
+      "description": "Access your account to view personalized content and manage your preferences.",
+      "label": "Login"
+    },
+    "logout": {
+      "description": "Sign out of your account securely and return to the home screen.",
+      "label": "Logout"
+    },
+    "profile": {
+      "description": "View and edit your personal information, avatar, and account settings.",
+      "label": "Profile"
+    },
+    "settings": {
+      "description": "Customize your experience by adjusting language, notifications, and other preferences.",
+      "label": "Settings"
+    }
+  },
+  "defaultDescription": "Welcome to Minimal – a clean and simple interface to help you stay focused. Select a menu option to get started.",
+  "auth": {
+    "email": "Email",
+    "enterEmail": "Enter email",
+    "enterPassword": "Enter password",
+    "login": "Login",
+    "password": "Password"
+  }
+}

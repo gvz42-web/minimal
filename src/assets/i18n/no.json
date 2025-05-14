@@ -1,0 +1,48 @@
+{
+  "appName": "Minimal",
+  "common": {
+    "areYouSure": "Er du sikker?",
+    "back": "Tilbake",
+    "cancel": "Kansellere",
+    "ok": "Ok",
+    "save": "Spare",
+    "loading": "Lasting"
+  },
+  "languages": {
+    "cn": "Chineese",
+    "en": "Engelsk",
+    "ja": "Japansk",
+    "ru": "Russisk",
+    "he": "Hebraisk",
+    "no": "Norsk"
+  },
+  "settings": {
+    "language": "Språk"
+  },
+  "mainMenu": {
+    "login": {
+      "description": "Få tilgang til kontoen din for å se personlig innhold og administrere dine preferanser.",
+      "label": "Logg inn"
+    },
+    "logout": {
+      "description": "Logg ut av kontoen din sikkert og gå tilbake til startskjermen.",
+      "label": "Logging"
+    },
+    "profile": {
+      "description": "Se og rediger din personlige informasjon, avatar og kontoinnstillinger.",
+      "label": "Profil"
+    },
+    "settings": {
+      "description": "Tilpass opplevelsen din ved å justere språk, varsler og andre preferanser.",
+      "label": "Innstillinger"
+    }
+  },
+  "defaultDescription": "Velkommen til Minimal - et rent og enkelt grensesnitt for å hjelpe deg med å holde fokus. \nVelg et menyalternativ for å komme i gang.",
+  "auth": {
+    "email": "E -post",
+    "enterEmail": "Skriv inn e -post",
+    "enterPassword": "Skriv inn passord",
+    "login": "Logg inn",
+    "password": "Passord"
+  }
+}

@@ -1,7 +1,7 @@
-<label>{{ label() }}</label>
+<label>{{ label() | translate }}</label>
 <input
   #input
   [type]="type()"
   [value]="value()"
-  [placeholder]="placeholder()"
+  [placeholder]="placeholder() | translate"
   (input)="value.set(input.value)" />

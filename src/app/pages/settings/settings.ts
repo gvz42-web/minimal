@@ -1,11 +1,10 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
+import { SettingsMenu } from '../../features/settings/ui/settings-menu/settings-menu';
 
 @Component({
   selector: 'trm-settings',
-  imports: [],
+  imports: [SettingsMenu],
   templateUrl: './settings.html',
-  changeDetection: ChangeDetectionStrategy.OnPush
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class Settings {
-
-}
+export class Settings {}

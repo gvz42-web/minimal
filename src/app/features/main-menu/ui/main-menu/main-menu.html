@@ -3,13 +3,27 @@
     @for (item of items(); track item.label) {
       <li>
         @if (item.action; as action) {
-          <button class="trm-menu-item" (click)="action()" cdkMenuItem>
-            {{ item.label }}
+          <button
+            class="trm-menu-item"
+            (click)="action()"
+            (mouseover)="currentItem.set(item)"
+            (mouseleave)="currentItem.set(null)"
+            (focus)="currentItem.set(item)"
+            (blur)="currentItem.set(null)"
+            cdkMenuItem>
+            {{ item.label + '.label' | translate }}
           </button>
         }
         @if (item.path; as path) {
-          <a class="trm-menu-item" [routerLink]="path" cdkMenuItem>
-            {{ item.label }}
+          <a
+            class="trm-menu-item"
+            [routerLink]="path"
+            (mouseover)="currentItem.set(item)"
+            (mouseleave)="currentItem.set(null)"
+            (focus)="currentItem.set(item)"
+            (blur)="currentItem.set(null)"
+            cdkMenuItem>
+            {{ item.label + '.label' | translate }}
           </a>
         }
       </li>

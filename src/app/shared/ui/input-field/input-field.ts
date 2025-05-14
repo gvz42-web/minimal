@@ -7,10 +7,12 @@ import {
   signal,
 } from '@angular/core';
 import { ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';
+import { TranslatePipe } from '@ngx-translate/core';
 
 @Component({
   selector: 'trm-input-field',
   templateUrl: './input-field.html',
+  imports: [TranslatePipe],
   providers: [
     {
       provide: NG_VALUE_ACCESSOR,

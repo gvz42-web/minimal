@@ -1,0 +1,48 @@
+{
+  "appName": "Minimal",
+  "languages": {
+    "en": "English",
+    "ru": "Russian",
+    "cn": "Chineese",
+    "ja": "Japanese",
+    "he": "Hebrew",
+    "no": "Norwegian"
+  },
+  "mainMenu": {
+    "login": {
+      "label": "Login",
+      "description": "Access your account to view personalized content and manage your preferences."
+    },
+    "logout": {
+      "label": "Logout",
+      "description": "Sign out of your account securely and return to the home screen."
+    },
+    "profile": {
+      "label": "Profile",
+      "description": "View and edit your personal information, avatar, and account settings."
+    },
+    "settings": {
+      "label": "Settings",
+      "description": "Customize your experience by adjusting language, notifications, and other preferences."
+    }
+  },
+  "settings": {
+    "language": "Language"
+  },
+  "common": {
+    "back": "Back",
+    "cancel": "Cancel",
+    "save": "Save",
+    "areYouSure": "Are you sure?",
+    "ok": "Ok",
+    "loading": "Loading"
+  },
+  "auth": {
+    "email": "Email",
+    "enterEmail": "Enter email",
+    "password": "Password",
+    "enterPassword": "Enter password",
+    "login": "Login"
+  },
+  "defaultDescription": "Welcome to Minimal – a clean and simple interface to help you stay focused. Select a menu option to get started."
+}

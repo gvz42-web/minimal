@@ -1,5 +1,8 @@
 import { computed, inject } from '@angular/core';
 import { AuthStore } from '@feautres/auth/core/auth-store';
+import { rxMethod } from '@ngrx/signals/rxjs-interop';
+import { useOpenPrompt } from 'app/shared/ui/prompt/use-open-prompt';
+import { pipe, switchMap, tap } from 'rxjs';
 
 export type MenuItem = {
   label: string;
@@ -9,22 +12,37 @@ export type MenuItem = {
 
 export const useMenuItems = () => {
   const authStore = inject(AuthStore);
+  const openPrompt = useOpenPrompt();
 
   const MENU = {
     LOGIN: {
-      label: 'Login',
+      label: 'mainMenu.login',
       path: ['/login'],
     },
     LOGOUT: {
-      label: 'Logout',
-      action: () => authStore.logout(),
+      label: 'mainMenu.logout',
+      action: rxMethod<void>(
+        pipe(
+          switchMap(() =>
+            openPrompt({
+              text: 'common.areYouSure',
+            }).pipe(
+              tap(agree => {
+                if (agree) {
+                  authStore.logout();
+                }
+              })
+            )
+          )
+        )
+      ),
     },
     PROFILE: {
-      label: 'Profile',
+      label: 'mainMenu.profile',
       path: ['/profile'],
     },
     SETTINGS: {
-      label: 'Settings',
+      label: 'mainMenu.settings',
       path: ['/settings'],
     },
   };
@@ -33,7 +51,7 @@ export const useMenuItems = () => {
     if (authStore.isLoggedIn()) {
       return [MENU.PROFILE, MENU.SETTINGS, MENU.LOGOUT];
     } else {
-      return [MENU.LOGIN];
+      return [MENU.SETTINGS, MENU.LOGIN];
     }
   });
 };

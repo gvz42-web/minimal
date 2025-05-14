@@ -21,5 +21,7 @@
     "**/.angular/**": true,
     "**/coverage/**": true,
     "**/.git/**": true
-  }
+  },
+  "i18n-ally.localesPaths": ["src/assets/i18n", "src/app/shared/core/i18n"],
+  "i18n-ally.keystyle": "nested"
 }

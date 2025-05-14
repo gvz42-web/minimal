@@ -16,11 +16,12 @@ import { InputField } from '../../shared/ui/input-field/input-field';
 import { BackButton } from '../../shared/ui/back-button/back-button';
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 import { Router } from '@angular/router';
+import { TranslatePipe } from '@ngx-translate/core';
 
 @Component({
   selector: 'trm-login',
   templateUrl: './login.html',
-  imports: [InputField, ReactiveFormsModule, BackButton],
+  imports: [InputField, ReactiveFormsModule, BackButton, TranslatePipe],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class Login {

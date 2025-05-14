@@ -1,4 +1,6 @@
+import { Language } from '../i18n/languages';
+
 export type LocalStorageSchema = {
   token: string;
-  abs: number;
+  lang: Language;
 };

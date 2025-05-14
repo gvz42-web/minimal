@@ -1,0 +1,48 @@
+{
+  "appName": "最小限",
+  "common": {
+    "areYouSure": "本当にいいですか？",
+    "back": "戻る",
+    "cancel": "キャンセル",
+    "ok": "確認",
+    "save": "保存",
+    "loading": "読み込み"
+  },
+  "languages": {
+    "cn": "中国語",
+    "en": "英語",
+    "ru": "ロシア語",
+    "ja": "日本語",
+    "he": "ヘブライ語",
+    "no": "ノルウェー語"
+  },
+  "settings": {
+    "language": "言語"
+  },
+  "mainMenu": {
+    "login": {
+      "description": "アカウントにアクセスしてパーソナライズされたコンテンツを表示し、設定を管理します。",
+      "label": "ログイン"
+    },
+    "logout": {
+      "description": "アカウントから安全にサインアウトし、ホーム画面に戻ります。",
+      "label": "ログアウト"
+    },
+    "profile": {
+      "description": "個人情報、アバター、およびアカウント設定を表示および編集します。",
+      "label": "プロフィール"
+    },
+    "settings": {
+      "description": "言語、通知、その他の好みを調整して、エクスペリエンスをカスタマイズします。",
+      "label": "設定"
+    }
+  },
+  "defaultDescription": "Minimalへようこそ - 清潔でシンプルなインターフェイスで、集中し続けるのに役立ちます。\n開始するメニューオプションを選択します。",
+  "auth": {
+    "email": "メール",
+    "enterEmail": "電子メールを入力してください",
+    "enterPassword": "パスワードを入力します",
+    "login": "ログイン",
+    "password": "パスワード"
+  }
+}

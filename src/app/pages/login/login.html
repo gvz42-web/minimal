@@ -2,21 +2,23 @@
   <div class="flex flex-col gap-6">
     <trm-input-field
       [formControl]="loginForm.controls.email"
-      placeholder="Enter email"
+      placeholder="auth.enterEmail"
       type="email"
-      label="Email" />
+      label="auth.email" />
     <trm-input-field
       [formControl]="loginForm.controls.password"
-      placeholder="Enter password"
+      placeholder="auth.enterPassword"
       type="password"
-      label="Password" />
+      label="auth.password" />
   </div>
   <div class="mt-4 flex gap-4">
     <button class="trm-button" [disabled]="loginForm.invalid" (click)="login()">
-      Login
+      {{ 'auth.login' | translate }}
     </button>
-    <button class="trm-button" back-button>Cancel</button>
+    <button class="trm-button" back-button>
+      {{ 'common.cancel' | translate }}
+    </button>
   </div>
 } @else {
-  <p>Loading...</p>
+  <p>{{ 'common.loading' | translate }}...</p>
 }

@@ -1,0 +1,9 @@
+<p>{{ data.text | translate }}</p>
+<div class="flex items-center justify-center gap-2">
+  <button class="trm-button" (click)="close(true)">
+    {{ 'common.ok' | translate }}
+  </button>
+  <button class="trm-button" (click)="close(false)">
+    {{ 'common.cancel' | translate }}
+  </button>
+</div>
