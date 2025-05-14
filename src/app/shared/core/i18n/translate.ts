@@ -1,3 +1,4 @@
+import { Direction } from '@angular/cdk/bidi';
 import { DOCUMENT } from '@angular/common';
 import {
   computed,
@@ -5,6 +6,7 @@ import {
   inject,
   Injectable,
   RendererFactory2,
+  Signal,
   signal,
 } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
@@ -67,4 +69,9 @@ export class Translate {
 
 export const setupTranslation = () => {
   const translate = inject(Translate);
+};
+
+export const useDirection = (): Signal<Direction> => {
+  const isRtl = inject(Translate).isRtl;
+  return computed(() => (isRtl() ? 'rtl' : 'ltr'));
 };
