@@ -8,11 +8,12 @@ import {
 import { RouterLink } from '@angular/router';
 import { TranslatePipe } from '@ngx-translate/core';
 import { useDescription } from 'app/shared/core/description/description';
+import { ItemSelected } from 'app/shared/ui/item-selected/item-selected';
 import { MenuItem, useMenuItems } from './menu-items';
 
 @Component({
   selector: 'trm-main-menu',
-  imports: [CdkMenu, RouterLink, CdkMenuItem, TranslatePipe],
+  imports: [CdkMenu, RouterLink, CdkMenuItem, TranslatePipe, ItemSelected],
   templateUrl: './main-menu.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })

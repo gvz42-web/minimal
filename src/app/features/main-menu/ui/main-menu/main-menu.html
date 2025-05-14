@@ -6,10 +6,9 @@
           <button
             class="trm-menu-item"
             (click)="action()"
-            (mouseover)="currentItem.set(item)"
-            (mouseleave)="currentItem.set(null)"
-            (focus)="currentItem.set(item)"
-            (blur)="currentItem.set(null)"
+            (selected)="currentItem.set(item)"
+            (deselected)="currentItem.set(null)"
+            trmItemSelected
             cdkMenuItem>
             {{ item.label + '.label' | translate }}
           </button>
@@ -18,10 +17,9 @@
           <a
             class="trm-menu-item"
             [routerLink]="path"
-            (mouseover)="currentItem.set(item)"
-            (mouseleave)="currentItem.set(null)"
-            (focus)="currentItem.set(item)"
-            (blur)="currentItem.set(null)"
+            (selected)="currentItem.set(item)"
+            (deselected)="currentItem.set(null)"
+            trmItemSelected
             cdkMenuItem>
             {{ item.label + '.label' | translate }}
           </a>
