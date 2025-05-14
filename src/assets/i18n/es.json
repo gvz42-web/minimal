@@ -1,0 +1,67 @@
+{
+  "appName": "Mínimo",
+  "auth": {
+    "email": "Correo electrónico",
+    "enterEmail": "Ingrese el correo electrónico",
+    "enterPassword": "Ingrese la contraseña",
+    "login": "Acceso",
+    "password": "Contraseña"
+  },
+  "common": {
+    "areYouSure": "¿Está seguro?",
+    "back": "Atrás",
+    "cancel": "Cancelar",
+    "loading": "Cargando",
+    "ok": "De acuerdo",
+    "save": "Ahorrar"
+  },
+  "defaultDescription": "Bienvenido a Minimal: una interfaz limpia y simple para ayudarlo a mantenerse enfocado. \nSeleccione una opción de menú para comenzar.",
+  "languages": {
+    "cn": "Chineese",
+    "en": "Inglés",
+    "he": "hebreo",
+    "ja": "japonés",
+    "no": "noruego",
+    "ru": "ruso",
+    "es": "Español",
+    "pl": "Polaco"
+  },
+  "mainMenu": {
+    "login": {
+      "description": "Acceda a su cuenta para ver contenido personalizado y administrar sus preferencias.",
+      "label": "Acceso"
+    },
+    "logout": {
+      "description": "Firme de su cuenta de forma segura y regrese a la pantalla de inicio.",
+      "label": "Cierre de sesión"
+    },
+    "profile": {
+      "description": "Ver y editar su información personal, avatar y configuración de cuenta.",
+      "label": "Perfil"
+    },
+    "settings": {
+      "description": "Personalice su experiencia ajustando el lenguaje, las notificaciones y otras preferencias.",
+      "label": "Ajustes"
+    }
+  },
+  "settings": {
+    "back": {
+      "description": "Regrese al menú anterior o cierre el panel de configuración.",
+      "label": "Atrás"
+    },
+    "language": {
+      "description": "Seleccione su idioma preferido para la interfaz de aplicación.",
+      "label": "Idioma"
+    },
+    "theme": {
+      "description": "Elija un tema visual para personalizar el aspecto de la aplicación.",
+      "label": "Tema"
+    }
+  },
+  "themes": {
+    "dark": "Oscuro",
+    "green": "Verde",
+    "light": "Luz",
+    "purple": "Púrpura"
+  }
+}

@@ -14,7 +14,9 @@
     "ja": "Japansk",
     "ru": "Russisk",
     "he": "Hebraisk",
-    "no": "Norsk"
+    "no": "Norsk",
+    "es": "Spansk",
+    "pl": "Pusse"
   },
   "mainMenu": {
     "login": {

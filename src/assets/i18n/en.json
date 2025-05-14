@@ -6,7 +6,9 @@
     "cn": "Chineese",
     "ja": "Japanese",
     "he": "Hebrew",
-    "no": "Norwegian"
+    "no": "Norwegian",
+    "es": "Spanish",
+    "pl": "Polish"
   },
   "mainMenu": {
     "login": {
