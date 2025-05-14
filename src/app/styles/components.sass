@@ -2,7 +2,7 @@
   @apply block px-2 py-1 w-full text-start outline-none cursor-pointer
 
   &:hover, &:focus-visible
-    @apply text-stone-900 bg-stone-100
+    @apply text-background bg-primary
 
 .trm-input-field
   @apply w-full border-b-4
@@ -11,17 +11,17 @@
     @apply text-sm
 
   input
-    @apply w-full outline-none placeholder:text-stone-500 focus:placeholder:text-transparent
+    @apply w-full outline-none placeholder:text-placeholder focus:placeholder:text-transparent
 
 .trm-button
   @apply px-4 py-2 outline-none
 
   &:hover, &:focus-visible
     &:not(:disabled)
-      @apply text-stone-900 bg-stone-100
+      @apply text-background bg-primary
 
   &:disabled
-    @apply text-stone-500
+    @apply text-placeholder
 
 .trm-dialog-backdrop
   opacity: 0
@@ -29,4 +29,4 @@
 .trm-dialog
   max-width: unset !important
   .mat-mdc-dialog-surface
-    @apply rounded-none border-8 bg-stone-900 py-4 px-6
+    @apply rounded-none border-8 bg-background py-4 px-6 max-h-screen

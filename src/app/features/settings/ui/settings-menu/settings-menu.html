@@ -1,5 +1,10 @@
 <ul cdkMenu>
   <li>
+    <button class="trm-menu-item" (click)="openThemeChooser()" cdkMenuItem>
+      {{ 'settings.theme' | translate }}
+    </button>
+  </li>
+  <li>
     <button class="trm-menu-item" (click)="openLanguageChooser()" cdkMenuItem>
       {{ 'settings.language' | translate }}
     </button>

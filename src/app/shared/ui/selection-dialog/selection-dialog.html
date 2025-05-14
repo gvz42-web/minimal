@@ -1,25 +1,24 @@
-<div>
-  <label class="mb-4 block" id="language">{{ data.title | translate }}</label>
-  <ul
-    [cdkListboxValue]="[selectedValue()]"
-    (cdkListboxValueChange)="selectedValue.set($event.value[0])"
-    cdkListbox
-    aria-labelledby="language">
-    @for (option of data.options; track option) {
-      <li class="trm-menu-item" [cdkOption]="option.value">
-        @if (option.value === selectedValue()) {
-          ✓
-        }
-        {{ option.label | translate }}
-      </li>
-    }
-  </ul>
-  <div class="flex gap-2">
-    <button class="trm-button" (click)="close(selectedValue())">
-      {{ 'common.save' | translate }}
-    </button>
-    <button class="trm-button" (click)="close()">
-      {{ 'common.cancel' | translate }}
-    </button>
-  </div>
+<label class="mb-4 block" id="language">{{ data.title | translate }}</label>
+<ul
+  class="flex-1 overflow-y-auto"
+  [cdkListboxValue]="[selectedValue()]"
+  (cdkListboxValueChange)="selectedValue.set($event.value[0])"
+  cdkListbox
+  aria-labelledby="language">
+  @for (option of data.options; track option) {
+    <li class="trm-menu-item" [cdkOption]="option.value">
+      @if (option.value === selectedValue()) {
+        ✓
+      }
+      {{ option.label | translate }}
+    </li>
+  }
+</ul>
+<div class="flex gap-2">
+  <button class="trm-button" (click)="close(selectedValue())">
+    {{ 'common.save' | translate }}
+  </button>
+  <button class="trm-button" (click)="close()">
+    {{ 'common.cancel' | translate }}
+  </button>
 </div>

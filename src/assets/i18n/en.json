@@ -27,7 +27,8 @@
     }
   },
   "settings": {
-    "language": "Language"
+    "language": "Language",
+    "theme": "Theme"
   },
   "common": {
     "back": "Back",
@@ -43,6 +44,12 @@
     "password": "Password",
     "enterPassword": "Enter password",
     "login": "Login"
+  },
+  "themes": {
+    "dark": "Dark",
+    "green": "Green",
+    "purple": "Purple",
+    "light": "Light"
   },
   "defaultDescription": "Welcome to Minimal – a clean and simple interface to help you stay focused. Select a menu option to get started."
 }

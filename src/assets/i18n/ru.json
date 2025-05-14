@@ -9,7 +9,8 @@
     "no": "норвежский"
   },
   "settings": {
-    "language": "Язык"
+    "language": "Язык",
+    "theme": "Тема"
   },
   "common": {
     "areYouSure": "Вы уверены?",
@@ -44,5 +45,11 @@
     "enterPassword": "Введите пароль",
     "login": "Авторизоваться",
     "password": "Пароль"
+  },
+  "themes": {
+    "dark": "Темный",
+    "green": "Зеленый",
+    "light": "Свет",
+    "purple": "Фиолетовый"
   }
 }

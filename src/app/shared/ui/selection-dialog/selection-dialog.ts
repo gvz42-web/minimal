@@ -2,7 +2,6 @@ import { CdkListbox, CdkOption } from '@angular/cdk/listbox';
 import {
   ChangeDetectionStrategy,
   Component,
-  effect,
   inject,
   signal,
 } from '@angular/core';
@@ -21,8 +20,6 @@ export class SelectionDialog<T> {
   protected data: SelectionDialogData<T> = inject(MAT_DIALOG_DATA);
 
   protected selectedValue = signal<T>(this.data.selectedOption);
-
-  f = effect(() => console.log(this.selectedValue()));
 
   close(value?: T) {
     this.dialogRef.close(value);

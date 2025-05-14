@@ -1,13 +1,32 @@
 @use "tailwindcss"
+@use "app/styles/themes"
 @use "app/styles/base"
 @use "app/styles/components"
 
 :root
   font-size: 46px
 
+@theme
+  --color-primary: var(--trm-primary-color)
+  --color-primary-faded: var(--trm-primary-color-faded)
+  --color-placeholder: var(--trm-placeholder-color)
+  --color-background: var(--trm-background-color)
+
 *
   box-sizing: border-box
 
 body
-  @apply bg-stone-900 text-stone-100
+  @apply bg-background text-primary
   font-family: Arial, Helvetica, sans-serif
+
+::-webkit-scrollbar 
+  width: 20px
+
+::-webkit-scrollbar-track
+  @apply bg-background border-1
+
+::-webkit-scrollbar-thumb
+  @apply bg-primary
+
+::-webkit-scrollbar-thumb:hover 
+  @apply bg-primary-faded

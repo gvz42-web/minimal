@@ -17,7 +17,8 @@
     "no": "נורווגי"
   },
   "settings": {
-    "language": "שָׂפָה"
+    "language": "שָׂפָה",
+    "theme": "נוֹשֵׂא"
   },
   "mainMenu": {
     "login": {
@@ -44,5 +45,11 @@
     "enterPassword": "הזן סיסמה",
     "login": "כְּנִיסָה לַמַעֲרֶכֶת",
     "password": "סִיסמָה"
+  },
+  "themes": {
+    "dark": "כֵּהֶה",
+    "green": "יָרוֹק",
+    "light": "אוֹר",
+    "purple": "סָגוֹל"
   }
 }

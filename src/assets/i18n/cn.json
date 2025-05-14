@@ -9,7 +9,8 @@
   },
   "appName": "极简",
   "settings": {
-    "language": "语言"
+    "language": "语言",
+    "theme": "Theme"
   },
   "common": {
     "areYouSure": "你确定吗？",
@@ -44,5 +45,11 @@
     "enterPassword": "Enter password",
     "login": "Login",
     "password": "Password"
+  },
+  "themes": {
+    "dark": "Dark",
+    "green": "Green",
+    "light": "Light",
+    "purple": "Purple"
   }
 }

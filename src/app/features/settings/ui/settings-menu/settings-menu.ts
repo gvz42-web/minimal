@@ -4,6 +4,8 @@ import { rxMethod } from '@ngrx/signals/rxjs-interop';
 import { TranslatePipe } from '@ngx-translate/core';
 import { languages } from 'app/shared/core/i18n/languages';
 import { Translate } from 'app/shared/core/i18n/translate';
+import { ThemeService } from 'app/shared/core/theme/theme-service';
+import { themes } from 'app/shared/core/theme/themes';
 import { BackButton } from 'app/shared/ui/back-button/back-button';
 import { useOpenSelectionDialog } from 'app/shared/ui/selection-dialog/use-open-selection-dialog';
 import { pipe, switchMap, tap } from 'rxjs';
@@ -16,8 +18,9 @@ import { pipe, switchMap, tap } from 'rxjs';
 })
 export class SettingsMenu {
   private translate = inject(Translate);
+  private themeService = inject(ThemeService);
 
-  openSelectionDialog = useOpenSelectionDialog();
+  private openSelectionDialog = useOpenSelectionDialog();
 
   openLanguageChooser = rxMethod<void>(
     pipe(
@@ -33,6 +36,27 @@ export class SettingsMenu {
           tap(lang => {
             if (lang) {
               this.translate.setLanguage(lang);
+            }
+          })
+        )
+      )
+    )
+  );
+
+  openThemeChooser = rxMethod<void>(
+    pipe(
+      switchMap(() =>
+        this.openSelectionDialog({
+          selectedOption: this.themeService.currentTheme(),
+          options: themes.map(value => ({
+            value,
+            label: 'themes.' + value,
+          })),
+          title: 'settings.theme',
+        }).pipe(
+          tap(theme => {
+            if (theme) {
+              this.themeService.setTheme(theme);
             }
           })
         )

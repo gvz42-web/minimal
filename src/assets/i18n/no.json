@@ -17,7 +17,8 @@
     "no": "Norsk"
   },
   "settings": {
-    "language": "Språk"
+    "language": "Språk",
+    "theme": "Tema"
   },
   "mainMenu": {
     "login": {
@@ -44,5 +45,11 @@
     "enterPassword": "Skriv inn passord",
     "login": "Logg inn",
     "password": "Passord"
+  },
+  "themes": {
+    "dark": "Mørk",
+    "green": "Grønn",
+    "light": "Lys",
+    "purple": "Lilla"
   }
 }

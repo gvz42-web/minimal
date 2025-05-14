@@ -17,7 +17,8 @@
     "no": "ノルウェー語"
   },
   "settings": {
-    "language": "言語"
+    "language": "言語",
+    "theme": "テーマ"
   },
   "mainMenu": {
     "login": {
@@ -44,5 +45,11 @@
     "enterPassword": "パスワードを入力します",
     "login": "ログイン",
     "password": "パスワード"
+  },
+  "themes": {
+    "dark": "暗い",
+    "green": "緑",
+    "light": "ライト",
+    "purple": "紫"
   }
 }
