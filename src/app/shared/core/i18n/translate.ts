@@ -38,12 +38,10 @@ export class Translate {
     this.translateService.setDefaultLang(defaultLanguage);
     this.translateService.use(this.fromLocalStorage);
 
-    for (let lang of languages) {
-      this.translateService.setTranslation(lang, translationFiles[lang]);
-    }
-
-    effect(() => {
+    effect(async () => {
       const currentLanguage = this.currentLanguage();
+      const translationFile = await translationFiles[currentLanguage]();
+      this.translateService.setTranslation(currentLanguage, translationFile);
       this.translateService.use(currentLanguage);
       this.localStorage.set('lang', currentLanguage);
       this.renderer.setAttribute(
