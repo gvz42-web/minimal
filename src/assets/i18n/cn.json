@@ -1,67 +1,67 @@
 {
+  "appName": "极简",
   "languages": {
     "en": "英语",
-    "cn": "中文",
     "ru": "俄语",
+    "cn": "中文",
     "ja": "日语",
     "he": "希伯来语",
     "no": "挪威语",
     "es": "西班牙语",
     "pl": "波兰语"
   },
-  "appName": "极简",
-  "common": {
-    "areYouSure": "你确定吗？",
-    "back": "返回",
-    "cancel": "取消",
-    "ok": "确定",
-    "save": "保存",
-    "loading": "加载中"
-  },
   "mainMenu": {
     "login": {
-      "description": "访问您的账户以查看个性化内容并管理偏好设置。",
-      "label": "登录"
+      "label": "登录",
+      "description": "登录您的账户以查看个性化内容并管理您的偏好设置。"
     },
     "logout": {
-      "description": "安全地退出账户并返回主界面。",
-      "label": "退出登录"
+      "label": "退出登录",
+      "description": "安全退出您的账户并返回主界面。"
     },
     "profile": {
-      "description": "查看和编辑您的个人信息、头像和帐户设置。（此功能尚未实现）",
-      "label": "个人资料"
+      "label": "个人资料",
+      "description": "查看和编辑您的个人信息、头像和账户设置。（尚未实现）"
     },
     "settings": {
-      "description": "通过调整语言、通知等选项来自定义您的体验。",
-      "label": "设置"
+      "label": "设置",
+      "description": "通过调整语言、通知和其他偏好来自定义您的体验。"
     }
   },
-  "defaultDescription": "欢迎使用极简——一个简洁清爽的界面，助你保持专注。请选择一个菜单项开始使用。",
+  "settings": {
+    "language": {
+      "label": "语言",
+      "description": "选择您偏好的应用界面语言。"
+    },
+    "theme": {
+      "label": "主题",
+      "description": "选择一个视觉主题以自定义应用的外观和风格。"
+    },
+    "back": {
+      "label": "返回",
+      "description": "返回上一级菜单或关闭设置面板。"
+    }
+  },
+  "common": {
+    "back": "返回",
+    "cancel": "取消",
+    "save": "保存",
+    "areYouSure": "您确定吗？",
+    "ok": "确定",
+    "loading": "加载中"
+  },
   "auth": {
     "email": "电子邮箱",
     "enterEmail": "请输入电子邮箱",
+    "password": "密码",
     "enterPassword": "请输入密码",
-    "login": "登录",
-    "password": "密码"
+    "login": "登录"
   },
   "themes": {
     "dark": "深色",
     "green": "绿色",
-    "light": "浅色",
-    "purple": "紫色"
+    "purple": "紫色",
+    "light": "浅色"
   },
-  "settings": {
-    "back": {
-      "description": "返回上一级菜单或关闭设置面板。",
-      "label": "返回"
-    },
-    "language": {
-      "description": "选择您偏好的界面语言。",
-      "label": "语言"
-    },
-    "theme": {
-      "description": "选择视觉主题来自定义应用外观。",
-      "label": "主题"
-    }
-  }
+  "defaultDescription": "欢迎使用 极简 —— 一个简洁清爽的界面，帮助您保持专注。请选择菜单项开始使用。"
 }

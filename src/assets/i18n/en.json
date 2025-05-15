@@ -3,7 +3,7 @@
   "languages": {
     "en": "English",
     "ru": "Russian",
-    "cn": "Chineese",
+    "cn": "Chinese",
     "ja": "Japanese",
     "he": "Hebrew",
     "no": "Norwegian",
@@ -21,7 +21,7 @@
     },
     "profile": {
       "label": "Profile",
-      "description": "View and edit your personal information, avatar, and account settings. (it's not implemented yet)"
+      "description": "View and edit your personal information, avatar, and account settings. (Not implemented yet)"
     },
     "settings": {
       "label": "Settings",
@@ -31,11 +31,11 @@
   "settings": {
     "language": {
       "label": "Language",
-      "description": "Select your preferred language for the application interface."
+      "description": "Select your preferred language for the app interface."
     },
     "theme": {
       "label": "Theme",
-      "description": "Choose a visual theme to customize the look and feel of the app."
+      "description": "Choose a visual theme to personalize the look and feel of the app."
     },
     "back": {
       "label": "Back",
@@ -47,14 +47,14 @@
     "cancel": "Cancel",
     "save": "Save",
     "areYouSure": "Are you sure?",
-    "ok": "Ok",
+    "ok": "OK",
     "loading": "Loading"
   },
   "auth": {
     "email": "Email",
-    "enterEmail": "Enter email",
+    "enterEmail": "Enter your email",
     "password": "Password",
-    "enterPassword": "Enter password",
+    "enterPassword": "Enter your password",
     "login": "Login"
   },
   "themes": {
@@ -63,5 +63,5 @@
     "purple": "Purple",
     "light": "Light"
   },
-  "defaultDescription": "Welcome to Minimal – a clean and simple interface to help you stay focused. Select a menu option to get started."
+  "defaultDescription": "Welcome to Minimal — a clean and simple interface to help you stay focused. Select a menu option to get started."
 }

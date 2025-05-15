@@ -1,67 +1,67 @@
 {
   "appName": "Minimal",
-  "common": {
-    "areYouSure": "Er du sikker?",
-    "back": "Tilbake",
-    "cancel": "Kansellere",
-    "ok": "Ok",
-    "save": "Spare",
-    "loading": "Lasting"
-  },
   "languages": {
-    "cn": "Chineese",
     "en": "Engelsk",
-    "ja": "Japansk",
     "ru": "Russisk",
+    "cn": "Kinesisk",
+    "ja": "Japansk",
     "he": "Hebraisk",
     "no": "Norsk",
     "es": "Spansk",
-    "pl": "Pusse"
+    "pl": "Polsk"
   },
   "mainMenu": {
     "login": {
-      "description": "Få tilgang til kontoen din for å se personlig innhold og administrere dine preferanser.",
-      "label": "Logg inn"
+      "label": "Logg inn",
+      "description": "Få tilgang til kontoen din for å se personlig innhold og administrere preferanser."
     },
     "logout": {
-      "description": "Logg ut av kontoen din sikkert og gå tilbake til startskjermen.",
-      "label": "Logging"
+      "label": "Logg ut",
+      "description": "Logg ut av kontoen din på en sikker måte og gå tilbake til startskjermen."
     },
     "profile": {
-      "description": "Se og rediger din personlige informasjon, avatar og kontoinnstillinger. (Det er ikke implementert ennå)",
-      "label": "Profil"
+      "label": "Profil",
+      "description": "Vis og rediger personlig informasjon, avatar og kontoinnstillinger. (ikke implementert ennå)"
     },
     "settings": {
-      "description": "Tilpass opplevelsen din ved å justere språk, varsler og andre preferanser.",
-      "label": "Innstillinger"
+      "label": "Innstillinger",
+      "description": "Tilpass opplevelsen ved å justere språk, varsler og andre preferanser."
     }
   },
-  "defaultDescription": "Velkommen til Minimal - et rent og enkelt grensesnitt for å hjelpe deg med å holde fokus. \nVelg et menyalternativ for å komme i gang.",
+  "settings": {
+    "language": {
+      "label": "Språk",
+      "description": "Velg foretrukket språk for appens grensesnitt."
+    },
+    "theme": {
+      "label": "Tema",
+      "description": "Velg et visuelt tema for å tilpasse utseendet og følelsen av appen."
+    },
+    "back": {
+      "label": "Tilbake",
+      "description": "Gå tilbake til forrige meny eller lukk innstillingspanelet."
+    }
+  },
+  "common": {
+    "back": "Tilbake",
+    "cancel": "Avbryt",
+    "save": "Lagre",
+    "areYouSure": "Er du sikker?",
+    "ok": "OK",
+    "loading": "Laster"
+  },
   "auth": {
-    "email": "E -post",
-    "enterEmail": "Skriv inn e -post",
+    "email": "E-post",
+    "enterEmail": "Skriv inn e-post",
+    "password": "Passord",
     "enterPassword": "Skriv inn passord",
-    "login": "Logg inn",
-    "password": "Passord"
+    "login": "Logg inn"
   },
   "themes": {
     "dark": "Mørk",
     "green": "Grønn",
-    "light": "Lys",
-    "purple": "Lilla"
+    "purple": "Lilla",
+    "light": "Lys"
   },
-  "settings": {
-    "back": {
-      "description": "Gå tilbake til forrige meny eller lukk innstillingspanelet.",
-      "label": "Tilbake"
-    },
-    "language": {
-      "description": "Velg ditt foretrukne språk for applikasjonsgrensesnittet.",
-      "label": "Språk"
-    },
-    "theme": {
-      "description": "Velg et visuelt tema for å tilpasse appens utseende og følelse.",
-      "label": "Tema"
-    }
-  }
+  "defaultDescription": "Velkommen til Minimal – et rent og enkelt grensesnitt som hjelper deg å holde fokus. Velg et menyalternativ for å komme i gang."
 }

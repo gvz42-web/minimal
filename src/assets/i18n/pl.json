@@ -1,67 +1,67 @@
 {
-  "appName": "Minimalny",
-  "auth": {
-    "email": "E-mail",
-    "enterEmail": "Wpisz e -mail",
-    "enterPassword": "Wprowadź hasło",
-    "login": "Login",
-    "password": "Hasło"
-  },
-  "common": {
-    "areYouSure": "Jesteś pewien?",
-    "back": "Z powrotem",
-    "cancel": "Anulować",
-    "loading": "Załadunek",
-    "ok": "OK",
-    "save": "Ratować"
-  },
-  "defaultDescription": "Witamy w Minimal - czysty i prosty interfejs, który pomoże ci się skupić. \nWybierz opcję menu, aby rozpocząć.",
+  "appName": "Minimal",
   "languages": {
-    "cn": "Chineese",
-    "en": "angielski",
-    "he": "hebrajski",
-    "ja": "japoński",
-    "no": "norweski",
-    "ru": "rosyjski",
-    "es": "hiszpański",
+    "en": "Angielski",
+    "ru": "Rosyjski",
+    "cn": "Chiński",
+    "ja": "Japoński",
+    "he": "Hebrajski",
+    "no": "Norweski",
+    "es": "Hiszpański",
     "pl": "Polski"
   },
   "mainMenu": {
     "login": {
-      "description": "Uzyskaj dostęp do konta, aby wyświetlić spersonalizowane treści i zarządzać preferencjami.",
-      "label": "Login"
+      "label": "Zaloguj się",
+      "description": "Zaloguj się, aby uzyskać dostęp do spersonalizowanych treści i zarządzać swoimi preferencjami."
     },
     "logout": {
-      "description": "Wypisz się bezpiecznie z konta i wróć do ekranu głównego.",
-      "label": "Logout"
+      "label": "Wyloguj się",
+      "description": "Bezpiecznie wyloguj się z konta i wróć do ekranu głównego."
     },
     "profile": {
-      "description": "Wyświetl i edytuj swoje dane osobowe, awatar i ustawienia konta. (To jeszcze nie zostało wdrożone)",
-      "label": "Profil"
+      "label": "Profil",
+      "description": "Wyświetl i edytuj swoje dane osobowe, awatar oraz ustawienia konta. (Jeszcze niezaimplementowane)"
     },
     "settings": {
-      "description": "Dostosuj swoje doświadczenie, dostosowując język, powiadomienia i inne preferencje.",
-      "label": "Ustawienia"
+      "label": "Ustawienia",
+      "description": "Dostosuj swoje doświadczenie, zmieniając język, powiadomienia i inne preferencje."
     }
   },
   "settings": {
-    "back": {
-      "description": "Wróć do poprzedniego menu lub zamknij panel ustawień.",
-      "label": "Z powrotem"
-    },
     "language": {
-      "description": "Wybierz swój preferowany język dla interfejsu aplikacji.",
-      "label": "Język"
+      "label": "Język",
+      "description": "Wybierz preferowany język interfejsu aplikacji."
     },
     "theme": {
-      "description": "Wybierz motyw wizualny, aby dostosować wygląd aplikacji.",
-      "label": "Temat"
+      "label": "Motyw",
+      "description": "Wybierz motyw wizualny, aby dostosować wygląd aplikacji."
+    },
+    "back": {
+      "label": "Wstecz",
+      "description": "Wróć do poprzedniego menu lub zamknij panel ustawień."
     }
+  },
+  "common": {
+    "back": "Wstecz",
+    "cancel": "Anuluj",
+    "save": "Zapisz",
+    "areYouSure": "Jesteś pewien?",
+    "ok": "OK",
+    "loading": "Ładowanie"
+  },
+  "auth": {
+    "email": "Email",
+    "enterEmail": "Wprowadź swój email",
+    "password": "Hasło",
+    "enterPassword": "Wprowadź swoje hasło",
+    "login": "Zaloguj się"
   },
   "themes": {
     "dark": "Ciemny",
     "green": "Zielony",
-    "light": "Światło",
-    "purple": "Fioletowy"
-  }
+    "purple": "Fioletowy",
+    "light": "Jasny"
+  },
+  "defaultDescription": "Witaj w Minimal — czystym i prostym interfejsie, który pomaga się skupić. Wybierz opcję z menu, aby rozpocząć."
 }
