@@ -4,15 +4,21 @@
       [formControl]="loginForm.controls.email"
       placeholder="auth.enterEmail"
       type="email"
+      data-testid="email"
       label="auth.email" />
     <min-input-field
       [formControl]="loginForm.controls.password"
       placeholder="auth.enterPassword"
+      data-testid="password"
       type="password"
       label="auth.password" />
   </div>
   <div class="mt-4 flex gap-4">
-    <button class="min-button" [disabled]="loginForm.invalid" (click)="login()">
+    <button
+      class="min-button"
+      [disabled]="loginForm.invalid"
+      (click)="login()"
+      data-testid="submit">
       {{ 'auth.login' | translate }}
     </button>
     <button class="min-button" back-button>

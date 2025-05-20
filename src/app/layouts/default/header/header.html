@@ -1,2 +1,4 @@
-<h1 class="text-xl font-thin">{{ 'appName' | translate }}</h1>
-<p>{{ name() }}</p>
+<h1 class="text-xl font-thin" data-testid="page-heading">
+  {{ 'appName' | translate }}
+</h1>
+<p data-testid="username">{{ name() }}</p>
