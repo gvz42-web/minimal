@@ -11,7 +11,7 @@ import { AuthStore } from '../../../features/auth/core/auth-store';
   selector: 'min-header',
   imports: [TranslatePipe],
   host: {
-    class: 'block px-8 py-2 border-b-4 flex justify-between items-center',
+    class: 'px-8 py-2 border-b-4 flex justify-between items-center',
   },
   templateUrl: './header.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
