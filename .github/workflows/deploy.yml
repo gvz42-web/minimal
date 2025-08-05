@@ -1,6 +1,11 @@
 name: Deploy
 
-on: workflow_call
+on:
+  workflow_call:
+    inputs:
+      firebaseServiceAccount:
+        required: true
+        type: string
 
 permissions:
   contents: read
@@ -18,6 +23,6 @@ jobs:
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: ${{ secrets.GITHUB_TOKEN }}
-          firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_MINIMAL_E0CFC }}
+          firebaseServiceAccount: ${{ inputs.firebaseServiceAccount }}
           projectId: minimal-e0cfc
           channelId: live
