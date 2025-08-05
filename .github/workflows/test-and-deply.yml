@@ -48,3 +48,12 @@ jobs:
           firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_MINIMAL_E0CFC }}
           projectId: minimal-e0cfc
           channelId: ${{ github.event_name == 'push' && github.ref == 'refs/heads/main' && 'live' || format('pr-{0}', github.event.pull_request.number) }}
+          expires: 7d
+      - name: Comment preview URL on PR
+        if: ${{ github.event_name == 'pull_request' }}
+        run: |
+          DEPLOY_URL="https://pr-${{ github.event.pull_request.number }}--minimal-e0cfc.web.app"
+          COMMENT="🚀 Preview deployment ready: [$DEPLOY_URL]($DEPLOY_URL)"
+          gh pr comment ${{ github.event.pull_request.number }} --body "$COMMENT"
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
