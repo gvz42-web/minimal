@@ -2,10 +2,9 @@ name: Deploy preview
 
 on:
   workflow_call:
-    inputs:
+    secrets:
       firebaseServiceAccount:
         required: true
-        type: string
 
 permissions:
   contents: read
@@ -23,7 +22,7 @@ jobs:
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: ${{ secrets.GITHUB_TOKEN }}
-          firebaseServiceAccount: ${{ inputs.firebaseServiceAccount }}
+          firebaseServiceAccount: ${{ secrets.firebaseServiceAccount }}
           projectId: minimal-e0cfc
           channelId: pr-${{ github.event.pull_request.number }}
           expires: 7d
