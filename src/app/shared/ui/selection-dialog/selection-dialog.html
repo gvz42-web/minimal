@@ -6,7 +6,10 @@
   cdkListbox
   aria-labelledby="language">
   @for (option of data.options; track option) {
-    <li class="min-menu-item" [cdkOption]="option.value">
+    <li
+      class="min-menu-item"
+      [cdkOption]="option.value"
+      [attr.data-testid]="option.value">
       @if (option.value === selectedValue()) {
         ✓
       }
@@ -15,10 +18,13 @@
   }
 </ul>
 <div class="flex gap-2">
-  <button class="min-button" (click)="close(selectedValue())">
+  <button
+    class="min-button"
+    (click)="close(selectedValue())"
+    data-testid="save-button">
     {{ 'common.save' | translate }}
   </button>
-  <button class="min-button" (click)="close()">
+  <button class="min-button" (click)="close()" data-testid="cancel-button">
     {{ 'common.cancel' | translate }}
   </button>
 </div>
