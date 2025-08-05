@@ -1,0 +1,23 @@
+name: Deploy
+
+on: workflow_call
+
+permissions:
+  contents: read
+  id-token: write
+  checks: write
+  pull-requests: write
+
+jobs:
+  deploy:
+    name: Deploy to Firebase Live Channel
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: npm ci && npm run build
+      - uses: FirebaseExtended/action-hosting-deploy@v0
+        with:
+          repoToken: ${{ secrets.GITHUB_TOKEN }}
+          firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_MINIMAL_E0CFC }}
+          projectId: minimal-e0cfc
+          channelId: live
