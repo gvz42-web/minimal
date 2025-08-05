@@ -3,12 +3,13 @@
     <li>
       <button
         class="min-menu-item"
+        [attr.data-testid]="'settings-' + item.label"
         (click)="item.action()"
         (selected)="currentItem.set(item.label)"
         (deselected)="currentItem.set(null)"
         minItemSelected
         cdkMenuItem>
-        {{ item.label + '.label' | translate }}
+        {{ 'settings.' + item.label + '.label' | translate }}
       </button>
     </li>
   }
