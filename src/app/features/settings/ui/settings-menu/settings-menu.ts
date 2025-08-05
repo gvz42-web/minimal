@@ -33,15 +33,15 @@ export class SettingsMenu {
 
   protected items = [
     {
-      label: 'settings.language',
+      label: 'language',
       action: () => this.openLanguageChooser(),
     },
     {
-      label: 'settings.theme',
+      label: 'theme',
       action: () => this.openThemeChooser(),
     },
     {
-      label: 'settings.back',
+      label: 'back',
       action: () => this.router.navigate(['..']),
     },
   ];
@@ -51,7 +51,7 @@ export class SettingsMenu {
       computed(() => {
         const key = this.currentItem();
         if (key) {
-          return key + '.description';
+          return 'settings.' + key + '.description';
         }
         return 'mainMenu.settings.description';
       })

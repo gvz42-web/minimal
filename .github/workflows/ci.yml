@@ -1,0 +1,34 @@
+name: CI/CD Pipeline
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+  id-token: write
+  checks: write
+  pull-requests: write
+
+jobs:
+  tests:
+    name: Run Playwright Tests
+    uses: ./.github/workflows/e2e-tests.yml
+
+  deploy-preview:
+    name: Deploy to Preview Channel
+    needs: tests
+    if: github.event_name == 'pull_request'
+    uses: ./.github/workflows/deploy-preview.yml
+    secrets:
+      firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_MINIMAL_E0CFC }}
+
+  deploy-live:
+    name: Deploy to Live Channel
+    needs: tests
+    if: github.event_name == 'push'
+    uses: ./.github/workflows/deploy.yml
+    secrets:
+      firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_MINIMAL_E0CFC }}
